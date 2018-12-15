@@ -11,7 +11,7 @@ RequireAdmin
 ### Privacy Tweaks ###
 DisableTelemetry                # EnableTelemetry
 DisableWiFiSense                # EnableWiFiSense
-# DisableSmartScreen            # EnableSmartScreen
+DisableSmartScreen              # EnableSmartScreen
 DisableWebSearch                # EnableWebSearch
 DisableAppSuggestions           # EnableAppSuggestions
 DisableActivityHistory          # EnableActivityHistory
@@ -24,10 +24,10 @@ DisableAdvertisingID            # EnableAdvertisingID
 DisableWebLangList              # EnableWebLangList
 DisableCortana                  # EnableCortana
 DisableErrorReporting           # EnableErrorReporting
-# SetP2PUpdateLocal             # SetP2PUpdateInternet          # SetP2PUpdateDisable
 DisableDiagTrack                # EnableDiagTrack
 DisableWAPPush                  # EnableWAPPush
-# HideRecentJumplists           # ShowRecentJumplists
+HideRecentJumplists             # ShowRecentJumplists
+SetP2PUpdateLocal               # SetP2PUpdateInternet          # SetP2PUpdateDisable
 
 ### Security Tweaks ###
 # SetUACLow                     # SetUACHigh
@@ -38,15 +38,19 @@ DisableAdminShares              # EnableAdminShares
 # DisableLLMNR                  # EnableLLMNR
 # DisableNCSIProbe              # EnableNCSIProbe
 SetCurrentNetworkPrivate        # SetCurrentNetworkPublic
-# SetUnknownNetworksPrivate     # SetUnknownNetworksPublic
+# SetUnknownNetworksPrivate     
+SetUnknownNetworksPublic
 # DisableNetDevicesAutoInst     # EnableNetDevicesAutoInst
-# DisableFirewall               # EnableFirewall
-# HideDefenderTrayIcon          # ShowDefenderTrayIcon
-# DisableDefender               # EnableDefender
-# DisableDefenderCloud          # EnableDefenderCloud
-# EnableCtrldFolderAccess       # DisableCtrldFolderAccess
-# EnableCIMemoryIntegrity       # DisableCIMemoryIntegrity
-# EnableDefenderAppGuard        # DisableDefenderAppGuard
+# DisableFirewall               
+EnableFirewall
+HideDefenderTrayIcon            # ShowDefenderTrayIcon
+# DisableDefender               
+EnableDefender
+# DisableDefenderCloud          
+EnableDefenderCloud
+EnableCtrldFolderAccess         # DisableCtrldFolderAccess
+EnableCIMemoryIntegrity         # DisableCIMemoryIntegrity
+EnableDefenderAppGuard          # DisableDefenderAppGuard
 HideAccountProtectionWarn       # ShowAccountProtectionWarn
 # DisableDownloadBlocking       # EnableDownloadBlocking
 DisableScriptHost               # EnableScriptHost
@@ -61,7 +65,7 @@ SetDEPOptOut                    # SetDEPOptIn
 # DisableUpdateMSRT             # EnableUpdateMSRT
 # DisableUpdateDriver           # EnableUpdateDriver
 DisableUpdateRestart            # EnableUpdateRestart
-# DisableHomeGroups             # EnableHomeGroups
+DisableHomeGroups               # EnableHomeGroups
 DisableSharedExperiences        # EnableSharedExperiences
 DisableRemoteAssistance         # EnableRemoteAssistance
 EnableRemoteDesktop             # DisableRemoteDesktop
@@ -74,17 +78,19 @@ DisableAutorun                  # EnableAutorun
 # DisableIndexing               # EnableIndexing
 # DisableNTFSLastAccess         # EnableNTFSLastAccess
 # SetBIOSTimeUTC                # SetBIOSTimeLocal
-# EnableHibernation             # DisableHibernation
+# EnableHibernation             
+DisableHibernation
 # DisableSleepButton            # EnableSleepButton
 # DisableSleepTimeout           # EnableSleepTimeout
 # DisableFastStartup            # EnableFastStartup
-# DisableAutoRebootOnCrash      # EnableAutoRebootOnCrash
+# DisableAutoRebootOnCrash      
+EnableAutoRebootOnCrash
 
 ### UI Tweaks ###
 DisableActionCenter             # EnableActionCenter
-DisableLockScreen               # EnableLockScreen
+# DisableLockScreen               # EnableLockScreen
 # DisableLockScreenRS1          # EnableLockScreenRS1
-HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
+# HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
 HideShutdownFromLockScreen      # ShowShutdownOnLockScreen
 # DisableAeroShake              # EnableAeroShake
 DisableStickyKeys               # EnableStickyKeys
@@ -93,7 +99,7 @@ ShowFileOperationsDetails       # HideFileOperationsDetails
 # EnableFileDeleteConfirm       # DisableFileDeleteConfirm
 HideTaskbarSearch               # ShowTaskbarSearchIcon         # ShowTaskbarSearchBox
 HideTaskView                    # ShowTaskView
-ShowSmallTaskbarIcons           # ShowLargeTaskbarIcons
+#ShowSmallTaskbarIcons           # ShowLargeTaskbarIcons
 SetTaskbarCombineWhenFull       # SetTaskbarCombineNever        # SetTaskbarCombineAlways
 HideTaskbarPeopleIcon           # ShowTaskbarPeopleIcon
 ShowTrayIcons                   # HideTrayIcons
@@ -103,12 +109,14 @@ DisableNewAppPrompt             # EnableNewAppPrompt
 # SetControlPanelSmallIcons     # SetControlPanelLargeIcons     # SetControlPanelCategories
 DisableShortcutInName           # EnableShortcutInName
 # HideShortcutArrow             # ShowShortcutArrow
-SetVisualFXPerformance          # SetVisualFXAppearance
-# EnableDarkTheme               # DisableDarkTheme
+# SetVisualFXPerformance        
+SetVisualFXAppearance
+EnableDarkTheme                 # DisableDarkTheme
 # AddENKeyboard                 # RemoveENKeyboard
-# EnableNumlock                 # DisableNumlock
-# SetSoundSchemeNone            # SetSoundSchemeDefault
-# DisableStartupSound           # EnableStartupSound
+EnableNumlock                   # DisableNumlock
+# SetSoundSchemeNone            
+SetSoundSchemeDefault
+DisableStartupSound             # EnableStartupSound
 # DisableChangingSoundScheme    # EnableChangingSoundScheme
 
 ### Explorer UI Tweaks ###
@@ -118,12 +126,14 @@ EnableNavPaneExpand             # DisableNavPaneExpand
 # EnableFldrSeparateProcess     # DisableFldrSeparateProcess
 # EnableRestoreFldrWindows      # DisableRestoreFldrWindows
 # DisableSharingWizard          # EnableSharingWizard
-# HideSelectCheckboxes          # ShowSelectCheckboxes
+HideSelectCheckboxes            # ShowSelectCheckboxes
 HideSyncNotifications           # ShowSyncNotifications
 HideRecentShortcuts             # ShowRecentShortcuts
 SetExplorerThisPC               # SetExplorerQuickAccess
-HideQuickAccess                 # ShowQuickAccess
-ShowThisPCOnDesktop             # HideThisPCFromDesktop
+#HideQuickAccess                
+ShowQuickAccess
+# ShowThisPCOnDesktop           
+HideThisPCFromDesktop
 # ShowUserFolderOnDesktop       # HideUserFolderFromDesktop
 HideDesktopFromThisPC           # ShowDesktopInThisPC
 # HideDesktopFromExplorer       # ShowDesktopInExplorer
@@ -140,10 +150,10 @@ HideVideosFromThisPC            # ShowVideosInThisPC
 Hide3DObjectsFromThisPC         # Show3DObjectsInThisPC
 # Hide3DObjectsFromExplorer     # Show3DObjectsInExplorer
 # HideIncludeInLibraryMenu      # ShowIncludeInLibraryMenu
-# HideGiveAccessToMenu          # ShowGiveAccessToMenu
-# HideShareMenu                 # ShowShareMenu
+HideGiveAccessToMenu            # ShowGiveAccessToMenu
+HideShareMenu                   # ShowShareMenu
 # DisableThumbnails             # EnableThumbnails
-DisableThumbnailCache           # EnableThumbnailCache
+# DisableThumbnailCache         # EnableThumbnailCache
 DisableThumbsDBOnNetwork        # EnableThumbsDBOnNetwork
 
 ### Application Tweaks ###
@@ -157,14 +167,15 @@ DisableAdobeFlash               # EnableAdobeFlash
 DisableEdgeShortcutCreation     # EnableEdgeShortcutCreation
 # UninstallMediaPlayer          # InstallMediaPlayer
 # UninstallInternetExplorer     # InstallInternetExplorer
-# UninstallWorkFolders          # InstallWorkFolders
-# UninstallPowerShellV2         # InstallPowerShellV2
-# InstallLinuxSubsystem         # UninstallLinuxSubsystem
-# InstallHyperV                 # UninstallHyperV
+UninstallWorkFolders            # InstallWorkFolders
+UninstallPowerShellV2           # InstallPowerShellV2
+InstallLinuxSubsystem           # UninstallLinuxSubsystem
+InstallHyperV                   # UninstallHyperV
 # InstallNET23                  # UninstallNET23
 SetPhotoViewerAssociation       # UnsetPhotoViewerAssociation
 AddPhotoViewerOpenWith          # RemovePhotoViewerOpenWith
-# UninstallPDFPrinter           # InstallPDFPrinter
+# UninstallPDFPrinter           
+InstallPDFPrinter
 UninstallXPSPrinter             # InstallXPSPrinter
 RemoveFaxPrinter                # AddFaxPrinter
 # UninstallFaxAndScan           # InstallFaxAndScan
@@ -178,8 +189,8 @@ RemoveFaxPrinter                # AddFaxPrinter
 # EnableAudio                   # DisableAudio
 
 ### Unpinning ###
-# UnpinStartMenuTiles
-# UnpinTaskbarIcons
+UnpinStartMenuTiles
+UnpinTaskbarIcons
 
 ### Auxiliary Functions ###
 WaitForKey
