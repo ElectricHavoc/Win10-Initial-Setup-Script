@@ -26,7 +26,7 @@ DisableCortana
 DisableErrorReporting     
 DisableDiagTrack          
 DisableWAPPush            
-HideRecentJumplists       
+DisableRecentFiles       
 SetP2PUpdateLocal         
 
 ### Security Tweaks ###
