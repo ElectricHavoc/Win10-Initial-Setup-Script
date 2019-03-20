@@ -37,8 +37,8 @@ EnableFirewall
 EnableDefender
 EnableDefenderCloud
 EnableCtrldFolderAccess    
-#EnableCIMemoryIntegrity    # One of these settings
-#EnableDefenderAppGuard     # Broke drivers for Logitech KBD
+EnableCIMemoryIntegrity    # One of these settings
+EnableDefenderAppGuard     # Broke drivers for Logitech KBD
 HideAccountProtectionWarn  
 DisableScriptHost          
 EnableDotNetStrongCrypto   
@@ -99,10 +99,12 @@ HideShareMenu
 DisableThumbsDBOnNetwork        
 
 ### Application Tweaks ###
-DisableOneDrive            
-UninstallOneDrive          
-UninstallMsftBloat         
-UninstallThirdPartyBloat   
+#DisableOneDrive            
+EnableOneDrive
+#UninstallOneDrive          
+InstallOneDrive
+UninstallMsftBloat
+UninstallThirdPartyBloat
 DisableXboxFeatures        
 DisableAdobeFlash          
 DisableEdgeShortcutCreation
