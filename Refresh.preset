@@ -1,0 +1,127 @@
+##########
+# Win 10 / Server 2016 / Server 2019 Initial Setup Script - Default preset
+# Author: Disassembler <disassembler@dasm.cz>
+# Version: v3.3, 2018-10-22
+# Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+##########
+
+### Require administrator privileges ###
+RequireAdmin
+
+### Privacy Tweaks ###
+DisableTelemetry          
+DisableWiFiSense          
+DisableSmartScreen        
+DisableWebSearch          
+DisableAppSuggestions     
+DisableActivityHistory    
+DisableBackgroundApps     
+DisableLocationTracking   
+DisableMapUpdates         
+DisableFeedback           
+DisableTailoredExperiences
+DisableAdvertisingID      
+DisableWebLangList        
+DisableCortana            
+DisableErrorReporting     
+DisableDiagTrack          
+DisableWAPPush            
+HideRecentJumplists       
+SetP2PUpdateLocal         
+
+### Security Tweaks ###
+DisableAdminShares         
+SetCurrentNetworkPrivate   
+SetUnknownNetworksPublic
+EnableFirewall
+EnableDefender
+EnableDefenderCloud
+EnableCtrldFolderAccess    
+EnableCIMemoryIntegrity    # One of these settings
+EnableDefenderAppGuard     # Broke drivers for Logitech KBD
+HideAccountProtectionWarn  
+DisableScriptHost          
+EnableDotNetStrongCrypto   
+EnableF8BootMenu               
+SetDEPOptOut                   
+
+### Service Tweaks ###
+DisableUpdateRestart           
+DisableHomeGroups              
+DisableSharedExperiences       
+DisableRemoteAssistance         
+EnableRemoteDesktop             
+DisableAutoplay                 
+DisableAutorun                  
+DisableHibernation
+EnableAutoRebootOnCrash
+
+### UI Tweaks ###
+#DisableActionCenter
+HideShutdownFromLockScreen     
+DisableStickyKeys              
+ShowTaskManagerDetails         
+ShowFileOperationsDetails      
+HideTaskbarSearch              
+HideTaskView                   
+SetTaskbarCombineWhenFull      
+HideTaskbarPeopleIcon           
+ShowTrayIcons                   
+DisableSearchAppInStore         
+DisableNewAppPrompt             
+DisableShortcutInName           
+SetVisualFXAppearance
+EnableDarkTheme                 
+EnableNumlock                   
+#SetSoundSchemeDefault
+DisableStartupSound             
+
+### Explorer UI Tweaks ###
+ShowKnownExtensions             
+ShowHiddenFiles                 
+EnableNavPaneExpand             
+HideSelectCheckboxes            
+HideSyncNotifications           
+HideRecentShortcuts             
+SetExplorerThisPC               
+#HideQuickAccess                
+ShowQuickAccess
+HideThisPCFromDesktop
+HideDesktopFromThisPC           
+HideDocumentsFromThisPC         
+HideDownloadsFromThisPC         
+HideMusicFromThisPC             
+HidePicturesFromThisPC          
+HideVideosFromThisPC            
+Hide3DObjectsFromThisPC         
+HideGiveAccessToMenu            
+HideShareMenu                   
+DisableThumbsDBOnNetwork        
+
+### Application Tweaks ###
+#DisableOneDrive            
+EnableOneDrive
+#UninstallOneDrive          
+InstallOneDrive
+UninstallMsftBloat
+UninstallThirdPartyBloat
+DisableXboxFeatures        
+DisableAdobeFlash          
+DisableEdgeShortcutCreation
+#UninstallWorkFolders       
+#UninstallPowerShellV2      
+#InstallLinuxSubsystem      
+#InstallHyperV              
+SetPhotoViewerAssociation  
+AddPhotoViewerOpenWith
+InstallPDFPrinter
+UninstallXPSPrinter   
+RemoveFaxPrinter      
+
+### Unpinning ###
+#UnpinStartMenuTiles
+#UnpinTaskbarIcons
+
+### Auxiliary Functions ###
+WaitForKey
+#Restart
